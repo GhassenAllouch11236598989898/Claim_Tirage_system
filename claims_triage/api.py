@@ -63,8 +63,11 @@ async def lifespan(app: FastAPI):
     logger.info("Starting Claims Triage System...")
 
     # Init database
-    await init_db()
-    logger.info("Database initialized.")
+    try:
+        await init_db()
+        logger.info("Database initialized.")
+    except Exception as e:
+        logger.warning(f"Database init failed (running in fallback mode): {e}")
 
     # Connect to Redis
     try:

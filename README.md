@@ -16,6 +16,7 @@
 
 - [Overview](#-overview)
 - [System Architecture](#-system-architecture)
+- [Live Video Demo](#-live-video-demo)
 - [Interactive UI Showcase](#-interactive-ui-showcase)
 - [How It Works (Agent Workflow)](#-how-it-works-agent-workflow)
 - [Key Safety & Production Features](#-key-safety--production-features)
@@ -87,6 +88,14 @@ Every incoming claim flows through specialized LLM-powered agents that:
                          │   • Postgres: Audit Traces│  (Token usage, latency, decisions)
                          └───────────────────────────┘
 ```
+
+---
+
+## 🎬 Live Video Demo
+
+Watch the autonomous multi-agent pipeline execute live: from ingestion and classification, through severity scoring and reviewer QA confidence evaluation, to deterministic Human-in-the-Loop adjudication and instant auto-approval.
+
+![Claims Triage System Demo](screenshots/demo.webp)
 
 ---
 
